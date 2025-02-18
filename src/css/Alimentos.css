@@ -102,14 +102,82 @@ nav ul li i {
 }
 
 .banner h1 {
-  font-family: "Dancing Script", cursive; /* Fuente elegante */
-  font-size: 50px;
-  color: #992ab4; /* Rojo oscuro */
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  color: #992ab4;
   font-weight: bold;
 }
 
 .banner p {
-  font-family: "Playfair Display", serif; /* Fuente elegante para subtítulos */
+  font-family: "Playfair Display", serif;
   font-size: 18px;
   color: #563692;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fdfbf6;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 60px;
+  justify-content: center;
+}
+
+.producto {
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto img {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.producto:hover img {
+  transform: scale(1.1);
+}
+
+.productos:hover .producto:not(:hover) {
+  opacity: 0.5;
+}
+
+.nombre {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.precio {
+  font-size: 16px;
+  color: #444;
+}
+
+.btn {
+  background: linear-gradient(to right, #9832c0, #ff2bff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.producto:hover .btn {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #be2adb, #992ab4);
+  transform: scale(1.15);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
