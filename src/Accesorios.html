@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/Accesorios.css'>
+    <script src='js/Acessorios.js'></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+          <div class="logo">
+            <img src="Img/Emporio.jpg"  class="logo" alt="EMPORIO.jpeg" />
+          </div>
+          <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="index.html"><i class="fas fa-dog"></i> Inicio</a>
+              <li class="dropdown">
+                <a href="#"><i class="fas fa-dog"></i> Perros </a>
+                <ul class="dropdown-menu">
+                  <li><a href="Alimentos.html">Alimentos</a></li>
+                  <li><a href="#">Accesorios</a></li>
+                  <li><a href="#">Juguetes</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#"><i class="fas fa-cat"></i> Gatos </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Arena</a></li>
+                  <li><a href="#">Comida</a></li>
+                  <li><a href="#">Rascadores</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#"><i class="fas fa-horse"></i> Conejos </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Comida</a></li>
+                  <li><a href="#">Jaulas</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#"><i class="fas fa-crow"></i> Aves </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Semillas</a></li>
+                  <li><a href="#">Jaulas</a></li>
+                  <li><a href="#">Vitaminas</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#"><i class="fas fa-paw"></i> Productos </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Higiene</a></li>
+                  <li><a href="#">Medicamentos</a></li>
+                  <li><a href="#">Suplementos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-cart">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <button class="btn">Mi cuenta</button>
+          </div>
+        </header>
+        <div class="productos">
+          <div class="producto">
+              <img src="Img/Nutre can perro 1.jpg" alt=".......">
+              <p class="nombre">NUTRE CAN</p>
+              <p class="precio">$50.000</p>
+    
+            <div id="detallesA" class="detalles">
+                <h1>NUTRE CAN Croquetas</h1>
+                <p>Stock: Disponible</p>
+            </div>
+            <div id="detallesB" class="detalles">
+              <h1>NUTRECAN</h1>
+              <p>Stock: Disponible</p>
+          </div>
+          <button onclick="mostrarDetalles('detallesA')">Ver Detalles</button>
+            <button onclick="mostrarDetalles('detallesB')">Ver Detalles</button>
+              <button class="btn">Comprar</button>
+          </div>
+    
+          <div class="producto">
+              <img src="Img/Nutre can perro 2.jpg" height="220px"  alt="......">
+              <p class="nombre">NUTRE CAN Croquetas</p>
+              <p class="precio">$50.000</p>
+              <div id="detallesC" class="detalles">
+                <h1>NUTRE CAN Croquetas</h1>
+                <p>Stock: Disponible</p>
+            </div>
+            <div id="detallesC" class="detalles">
+              <h1>NUTRECAN CROQUETAS</h1>
+              <p>Stock: No disponible</p>
+          </div>
+          <div id="detallesD" class="detalles">
+            <h1>NUTRECAN CROQUETAS</h1>
+            <p>Stock: No disponible</p>
+        </div>
+            <button onclick="mostrarDetalles('detallesC')">Ver Detalles</button>
+            <button onclick="mostrarDetalles('detallesD')">Ver Detalles</button>
+              <button class="btn">Comprar</button>
+          </div>
+          <div class="producto">
+              <img src="Img/Nutre can perro 3.jpg" alt="Perros">
+              <p class="nombre">NUTRE CAN Campo </p>
+              <p class="precio">$50.000</p>
+              
+              <div id="detallesE" class="detalles">
+                <h1>NUTRECAN CROQUETAS</h1>
+                <p>Stock: No disponible</p>
+            </div>
+            <div id="detallesF" class="detalles">
+              <h1>NUTRECAN CROQUETAS</h1>
+              <p>Stock: No disponible</p>
+          </div>
+          <button onclick="mostrarDetalles('detallesE')">Ver Detalles</button>
+          <button onclick="mostrarDetalles('detallesF')">Ver Detalles</button>
+              <button class="btn">Comprar</button>
+          </div>
+          <div class="producto">
+              <img src="Img/Nutre can perro 4.jpg" alt="perro" >
+              <p class="nombre">......</p>
+              <p class="precio">$50.000</p>
+              <button class="btn">Comprar</button>
+          </div>
+          <div class="producto">
+            <img src="Img/Emporio.jpg" alt=".....">
+            <p class="nombre">......</p>
+            <p class="precio">$50.000</p>
+            <button class="btn">Comprar</button>
+        </div>
+        <div class="producto">
+          <img src="Img/Emporio.jpg" alt=".....">
+          <p class="nombre">......</p>
+          <p class="precio">$50.000</p>
+          <button class="btn">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="Img/Emporio.jpg" alt=".....">
+        <p class="nombre">......</p>
+        <p class="precio">$50.000</p>
+        <button class="btn">Comprar</button>
+    </div>
+    <div class="producto">
+      <img src="Img/Emporio.jpg" alt=".....">
+      <p class="nombre">......</p>
+      <p class="precio">$50.000</p>
+      <button class="btn">Comprar</button>
+    </div>
+</body>
+</html>
